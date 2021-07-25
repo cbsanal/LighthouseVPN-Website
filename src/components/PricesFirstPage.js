@@ -38,7 +38,7 @@ function firstPage() {
                 <img
                   className="below-arrow"
                   src="../icon/below-arrow.svg"
-                  alt=""
+                  alt="below-arrow-icon"
                 />
               </span>
             </a>

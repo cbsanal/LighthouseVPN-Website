@@ -25,6 +25,7 @@ html {
 
 body {
   overflow-x: hidden;
+  perspective: 1px;
 }
 
 a {
@@ -563,6 +564,7 @@ svg {
   height: auto;
   left: -2vw;
   top: -13vw;
+  transform: perspective(1px) translateZ(0);
 }
 .features-list-wrapper .list-img-wrapper .img-wrapper .lock-bottom {
   width: 20vw;

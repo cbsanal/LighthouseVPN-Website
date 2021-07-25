@@ -20,7 +20,11 @@ function FeaturesSecondPage() {
           <div className="list-container">
             <div className="feature">
               <div className="title-plus-wrapper">
-                <img className="plus-sign" src="../img/plus.svg" alt="" />
+                <img
+                  className="plus-sign"
+                  src="../img/plus.svg"
+                  alt="plus-icon"
+                />
                 <span className="title">Security</span>
               </div>
               <div className="answer">
@@ -32,7 +36,11 @@ function FeaturesSecondPage() {
             </div>
             <div className="feature">
               <div className="title-plus-wrapper">
-                <img className="plus-sign" src="../img/plus.svg" alt="" />
+                <img
+                  className="plus-sign"
+                  src="../img/plus.svg"
+                  alt="plus-icon"
+                />
                 <span className="title">Privacy</span>
               </div>
               <div className="answer">
@@ -46,7 +54,11 @@ function FeaturesSecondPage() {
           <div className="list-container">
             <div variants={opacity} className="feature">
               <div className="title-plus-wrapper">
-                <img className="plus-sign" src="../img/plus.svg" alt="" />
+                <img
+                  className="plus-sign"
+                  src="../img/plus.svg"
+                  alt="plus-icon"
+                />
                 <span className="title">Freedom</span>
               </div>
               <div className="answer">
@@ -58,7 +70,11 @@ function FeaturesSecondPage() {
             </div>
             <div className="feature">
               <div className="title-plus-wrapper">
-                <img className="plus-sign" src="../img/plus.svg" alt="" />
+                <img
+                  className="plus-sign"
+                  src="../img/plus.svg"
+                  alt="plus-icon"
+                />
                 <span className="title">Ad Blocker</span>
               </div>
               <div className="answer">
@@ -72,7 +88,11 @@ function FeaturesSecondPage() {
           <div className="list-container">
             <div className="feature">
               <div className="title-plus-wrapper">
-                <img className="plus-sign" src="../img/plus.svg" alt="" />
+                <img
+                  className="plus-sign"
+                  src="../img/plus.svg"
+                  alt="plus-icon"
+                />
                 <span className="title">High Speed</span>
               </div>
               <div className="answer">
@@ -84,7 +104,11 @@ function FeaturesSecondPage() {
             </div>
             <div className="feature">
               <div className="title-plus-wrapper">
-                <img className="plus-sign" src="../img/plus.svg" alt="" />
+                <img
+                  className="plus-sign"
+                  src="../img/plus.svg"
+                  alt="plus-icon"
+                />
                 <span className="title">Kill Switch</span>
               </div>
               <div className="answer">

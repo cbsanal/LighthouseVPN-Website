@@ -36,7 +36,7 @@ function FeaturesFirstPage() {
                 <img
                   className="right-arrow"
                   src="../icon/right-arrow.svg"
-                  alt=""
+                  alt="right-arrow-icon"
                 />
               </span>
             </a>
