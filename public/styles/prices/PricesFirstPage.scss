@@ -1,0 +1,36 @@
+$big-font: calc(2.5rem + 1.5vw);
+$normal-font: calc(1.5rem + 1.5vw);
+$small-font: calc(0.3rem + 1.5vw);
+
+.prices {
+  .line-span,
+  .third-line {
+    &:hover {
+      box-shadow: none !important;
+    }
+  }
+}
+.blue {
+  color: #66b9ff;
+}
+.btn-bg-blue span {
+  background: #002e72 !important;
+}
+.below-arrow {
+  animation: down 0.75s ease-out infinite;
+}
+@keyframes down {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .security-img {
+    width: 75%;
+    height: auto;
+  }
+}

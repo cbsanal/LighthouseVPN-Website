@@ -1,0 +1,93 @@
+$big-font: calc(1.5rem + 1vw);
+$normal-font: calc(0.75rem + 1vw);
+$small-font: calc(0.75rem + 0.75vw);
+.support {
+  padding: 3% 6%;
+  fieldset {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  legend {
+    padding: 2%;
+    margin: auto;
+    font-size: $big-font;
+  }
+  .element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: $normal-font;
+    margin: 1em 4vw;
+    input {
+      padding: 3%;
+      width: 15vw;
+      min-width: 200px;
+      max-width: 400px;
+      font-size: $small-font;
+      font-family: "Linden Hill", serif;
+    }
+    textarea {
+      width: 38vw;
+      min-width: calc(400px + 8vw);
+      max-width: calc(800px + 8vw);
+      font-size: $small-font;
+      padding: 3%;
+      font-family: "Linden Hill", serif;
+    }
+  }
+  .row,
+  .last-row {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .last-row {
+    flex-direction: column;
+  }
+  .form-btn {
+    padding: 1%;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2em;
+    border: none;
+    cursor: pointer;
+    font-size: $normal-font;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.25s ease-out;
+    &:hover {
+      color: black;
+      background: white;
+    }
+    font-family: "Linden Hill", serif;
+  }
+}
+@media screen and (max-width: 580px) {
+  .support {
+    legend {
+      font-size: 3rem;
+    }
+    .row {
+      flex-direction: column;
+    }
+    .element {
+      font-size: 2rem;
+
+      input {
+        font-size: 1.5rem;
+      }
+      textarea {
+        width: 15vw;
+        min-width: 200px;
+        font-size: 1.5rem;
+      }
+    }
+    .form-btn {
+      min-width: 200px;
+      font-size: 2rem;
+    }
+  }
+}

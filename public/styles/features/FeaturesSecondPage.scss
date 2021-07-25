@@ -1,0 +1,118 @@
+$small-font: calc(0.3rem + 1.5vw);
+$normal: calc(1rem + 1.5vw);
+$small: calc(0.5rem + 1vw);
+
+.features-list-wrapper {
+  padding: 3% 6%;
+
+  .feature {
+    width: 40%;
+  }
+  .list-img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .lists {
+      width: 60%;
+    }
+    .list-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 5% 0;
+    }
+    .img-wrapper {
+      width: 38%;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 50%;
+        transform: translateY(-50%);
+        image-rendering: -webkit-optimize-contrast;
+      }
+      .lock-top {
+        z-index: 1;
+        width: 20vw;
+        height: auto;
+        left: -2vw;
+        top: -13vw;
+        // margin: auto;
+      }
+      .lock-bottom {
+        width: 20vw;
+        height: auto;
+        top: 13vw;
+        left: 10vw;
+        // margin: auto;
+      }
+    }
+  }
+
+  .title-plus-wrapper {
+    display: flex;
+    align-items: center;
+    .title {
+      font-size: $normal;
+      display: flex;
+      align-items: center;
+      // transform: translateY(25%);
+    }
+    .plus-sign {
+      width: 5%;
+      min-width: 10px;
+      margin-right: 3%;
+      transform: translateY(-20%);
+    }
+  }
+}
+.title-explanation {
+  font-size: $small;
+  margin-top: 0.75em;
+}
+#lock {
+  transform-origin: 80% !important;
+}
+@media screen and (max-width: 1024px) {
+  .title {
+    text-align: center;
+  }
+  .features-list-wrapper {
+    .list-img-wrapper {
+      flex-direction: column;
+      #lock,
+      .lock-bottom {
+        display: none;
+      }
+      .feature,
+      .lists {
+        width: 100%;
+        text-align: center;
+        padding: 0 0.75%;
+        .title-plus-wrapper {
+          justify-content: center;
+          .title {
+            font-size: 3rem;
+          }
+        }
+        .answer {
+          .title-explanation {
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .title-plus-wrapper {
+    .title {
+      font-size: 2.25rem !important;
+    }
+  }
+  .answer {
+    .title-explanation {
+      font-size: 1.5rem !important;
+    }
+  }
+}

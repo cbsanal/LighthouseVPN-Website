@@ -1,0 +1,102 @@
+$big-font: calc(2.5rem + 1.5vw);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Linden Hill", serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+img,
+svg {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  font-size: $big-font;
+}
+.main-wrapper {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+.btn-wrapper {
+  display: flex;
+  margin-bottom: 1.5em;
+  .btn span {
+    background: #224959;
+    padding: 0.5em 1em;
+    font-size: calc(0.75rem + 1vw);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    transition: all 0.25s linear;
+    &:hover {
+      letter-spacing: 2.5px;
+    }
+  }
+}
+.right-arrow,
+.below-arrow {
+  width: 15px;
+  margin-left: 0.5em;
+  height: auto;
+}
+
+// section {
+//   min-height: 90vh;
+// }
+
+// .frame1,
+// .frame2,
+// .frame3,
+// .frame4 {
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background: #fffebf;
+// }
+// .frame1 {
+//   z-index: 5;
+// }
+// .frame2 {
+//   background: #ff8efb;
+//   z-index: 4;
+// }
+// .frame3 {
+//   background: #8ed2ff;
+//   z-index: 3;
+// }
+// .frame4 {
+//   background: #8effa0;
+//   z-index: 2;
+// }
+// .frame-container {
+//   position: absolute;
+// }
