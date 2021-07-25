@@ -24,6 +24,7 @@ links.forEach((link) => {
       lines[0].style.opacity = "1";
       lines[2].style.opacity = "1";
       hidden = true;
+      console.log("link");
     }
   });
 });

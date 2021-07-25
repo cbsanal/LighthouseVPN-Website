@@ -5,10 +5,10 @@ function Navbar() {
   const { pathname } = useLocation();
   return (
     <nav className="navbar">
-      <div className="logo-wrapper">
+      <Link className="logo-wrapper" to="/">
         <img id="logo-img" src="./icon/logo.svg" alt="logo-img" />
         <h3 className="head-line">LighthouseVPN</h3>
-      </div>
+      </Link>
       <div className="links-wrapper">
         <ul className="links">
           <li

@@ -6,7 +6,7 @@ import Support from "./pages/Support";
 import Footer from "./components/Footer";
 import { Route, Switch } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import Script from "@gumgum/react-script-tag";
+import { Helmet } from "react-helmet";
 
 function App() {
   const location = useLocation();
@@ -16,7 +16,9 @@ function App() {
       <Switch location={location} key={location.pathname}>
         <Route path="/" exact>
           <About />
-          <Script src="./lightFollow.js" type="text/javascript" async />
+          <Helmet>
+            <script src="./lightFollow.js"></script>
+          </Helmet>
         </Route>
         <Route path="/features" exact>
           <Features />
@@ -29,7 +31,9 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-      <Script src="./hamburger.js" type="text/javascript" async />
+      <Helmet>
+        <script src="./hamburger.js"></script>
+      </Helmet>
     </div>
   );
 }

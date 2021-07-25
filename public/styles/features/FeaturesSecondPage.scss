@@ -36,14 +36,13 @@ $small: calc(0.5rem + 1vw);
         height: auto;
         left: -2vw;
         top: -13vw;
-        // margin: auto;
+        transform: perspective(1px) translateZ(0);
       }
       .lock-bottom {
         width: 20vw;
         height: auto;
         top: 13vw;
         left: 10vw;
-        // margin: auto;
       }
     }
   }
@@ -55,7 +54,6 @@ $small: calc(0.5rem + 1vw);
       font-size: $normal;
       display: flex;
       align-items: center;
-      // transform: translateY(25%);
     }
     .plus-sign {
       width: 5%;

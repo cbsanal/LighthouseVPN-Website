@@ -1,9 +1,8 @@
-/* * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-weight: 400;
-  scroll-behavior: smooth;
 }
 
 html {
@@ -12,11 +11,11 @@ html {
   background: black;
   color: white;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
+  perspective: 1px;
 }
 
 a {
@@ -456,6 +455,7 @@ svg {
   height: auto;
   left: -2vw;
   top: -13vw;
+  transform: perspective(1px) translateZ(0);
 }
 .features-list-wrapper .list-img-wrapper .img-wrapper .lock-bottom {
   width: 20vw;
@@ -874,4 +874,4 @@ footer .footer-links {
   }
 }
 
-# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */

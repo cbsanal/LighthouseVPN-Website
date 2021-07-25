@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { UseScroll } from "./UseScroll.js";
 import { useLocation } from "react-router-dom";
 import { opacity } from "../animation.js";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [element, controls] = UseScroll();
@@ -60,55 +61,55 @@ function Footer() {
         <ul>
           <li
             className="link"
-            style={pathname === "/features" ? { display: "none" } : {}}
-          >
-            <a href="/features">
-              Features
-              <img
-                className="right-arrow"
-                src="./../icon/right-arrow.svg"
-                alt="right-arrow-svg"
-              />
-            </a>
-          </li>
-          <li
-            className="link"
             style={pathname === "/" ? { display: "none" } : {}}
           >
-            <a href="/">
+            <Link to="/">
               About
               <img
                 className="right-arrow"
                 src="./../icon/right-arrow.svg"
                 alt="right-arrow-svg"
               />
-            </a>
+            </Link>
+          </li>
+          <li
+            className="link"
+            style={pathname === "/features" ? { display: "none" } : {}}
+          >
+            <Link to="/features">
+              Features
+              <img
+                className="right-arrow"
+                src="./../icon/right-arrow.svg"
+                alt="right-arrow-svg"
+              />
+            </Link>
           </li>
           <li
             className="link"
             style={pathname === "/prices" ? { display: "none" } : {}}
           >
-            <a href="/About">
+            <Link to="/prices">
               Prices
               <img
                 className="right-arrow"
                 src="./../icon/right-arrow.svg"
                 alt="right-arrow-svg"
               />
-            </a>
+            </Link>
           </li>
           <li
             className="link"
             style={pathname === "/support" ? { display: "none" } : {}}
           >
-            <a href="/support">
+            <Link to="/support">
               Support
               <img
                 className="right-arrow"
                 src="./../icon/right-arrow.svg"
                 alt="right-arrow-svg"
               />
-            </a>
+            </Link>
           </li>
         </ul>
       </motion.div>

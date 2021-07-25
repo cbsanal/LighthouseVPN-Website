@@ -12,13 +12,15 @@ function moveLight(clientX, clientY) {
   if (angle < -0.45) angle = -0.45;
   light.style.transform = `rotate(${angle}rad)`;
 }
-
-addEventListener("mousemove", ({ clientX, clientY }) => {
-  moveLight(clientX, clientY);
-});
-
-addEventListener("resize", () => {
+if (light !== null) {
+  addEventListener("mousemove", ({ clientX, clientY }) => {
+    moveLight(clientX, clientY);
+  });
+}
+function reset() {
   angle = 0;
   light.style.transform = `rotate(${angle}rad)`;
   lightCenter = getCenter(light);
-});
+}
+reset();
+addEventListener("resize", reset);
