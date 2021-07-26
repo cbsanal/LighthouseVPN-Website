@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { titleAnim, container } from "./../animation";
+import { Link } from "react-router-dom";
 
 function FeaturesFirstPage() {
   return (
@@ -30,7 +31,7 @@ function FeaturesFirstPage() {
             ipsum dolor sit amet.
           </motion.p>
           <div className="btn-wrapper">
-            <a className="btn orange-bg" href="/prices">
+            <Link className="btn orange-bg" to="/prices">
               <span>
                 See the prices
                 <img
@@ -39,7 +40,7 @@ function FeaturesFirstPage() {
                   alt="right-arrow-icon"
                 />
               </span>
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

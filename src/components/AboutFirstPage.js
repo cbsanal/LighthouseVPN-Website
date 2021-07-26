@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { titleAnim, container } from "./../animation";
+import { Link } from "react-router-dom";
 
 function firstPage() {
   return (
@@ -32,7 +33,7 @@ function firstPage() {
             industry.
           </motion.h3>
           <div className="btn-wrapper">
-            <a className="btn" href="/prices">
+            <Link className="btn" to="/prices">
               <span>
                 Try it now
                 <img
@@ -41,7 +42,7 @@ function firstPage() {
                   alt="right-arrow-icon"
                 />
               </span>
-            </a>
+            </Link>
           </div>
         </motion.div>
         <div className="icons-wrapper">

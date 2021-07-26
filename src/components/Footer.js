@@ -17,7 +17,7 @@ function Footer() {
         className="coded-by-text"
       >
         Designed and coded by <br />
-        Can Berk
+        Can Berk Sanal
       </motion.div>
       <motion.div
         variants={window.innerWidth < 1024 ? {} : opacity}
